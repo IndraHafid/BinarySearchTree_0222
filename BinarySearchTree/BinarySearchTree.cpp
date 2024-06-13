@@ -123,8 +123,58 @@ public:
 
 int main()
 {
-    std::cout << "Hello World!\n";
-}
+    BinaryTree x;
+    while (true)
+    {
+        cout << "\nmenu" << endl;
+        cout << "1. implement insert option" << endl;
+        cout << "2. perform inorder traversal" << endl;
+        cout << "3. perform preorder traversal" << endl;
+        cout << "4. perform postorder traversal" << endl;
+        cout << "5. exit " << endl;
+        cout << "\nenter your choice(1-5) :" << endl;
+
+        char ch;
+        cin >> ch;
+        cout << endl;
+
+        switch (ch)
+        {
+        case '1':
+        {
+            cout << "enter a word";
+            string word;
+            cin >> word;
+            x.insert(word);
+            break;
+        }
+
+        case '2':
+        {
+            x.inorder(x.ROOT);
+            break;
+        }
+
+        case '3':
+        {
+            x.preorder(x.ROOT);
+            break;
+        }
+
+        case '4':
+        {
+            x.postorder(x.ROOT);
+            break;
+        }
+
+        case '5':
+        {
+            return 0;
+        }
+
+        }
+    }
+};
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
