@@ -7,7 +7,9 @@ using namespace std;
 
 class Node {
 public:
-
+    string info;
+    Node* leftchiId;
+    Node* rightchiId;
 };
 
 int main()
