@@ -71,7 +71,21 @@ public:
         }
     }
 
-   
+    void inorder(Node* ptr)
+    {
+        if (ROOT == NULL)
+        {
+            cout << "Tree is empty" << endl;
+            return;
+        }
+
+        if (ptr != NULL)
+        {
+            inorder(ptr->leftchiId);
+            cout << ptr->info << " ";
+            inorder(ptr->rightchiId);
+        }
+    }
 };
 
 int main()
