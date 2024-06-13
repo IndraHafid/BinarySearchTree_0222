@@ -36,6 +36,10 @@ public:
     newNode->leftchiId = nullptr;//Make the left child of the new node point to NULL.
     newNode->rightchiId = nullptr; //Make the right child of the new node point to NULL.
 
+    Node* parent = nullptr;
+    Node* currentNode = nullptr;
+    search(element, parent, currentNode); //Locate the node wich will be the parent of the node to be insert
+
     
 };
 
