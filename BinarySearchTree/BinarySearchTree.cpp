@@ -10,7 +10,17 @@ public:
     string info;
     Node* leftchiId;
     Node* rightchiId;
+
+    //Constructor for the node class
+    Node(string i, Node* l, Node* r)
+    {
+        info = i;
+        leftchiId = l;
+        rightchiId = r;
+    }
 };
+
+
 
 int main()
 {
