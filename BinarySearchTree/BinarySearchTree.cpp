@@ -42,7 +42,11 @@ public:
 
     if (parent == nullptr) //If the parent is NULL(Tree is empty)
     {
+        ROOT = newNode; //Mark the new node as ROOT.
+        return; //Exit
     }
+
+   
 };
 
 int main()
