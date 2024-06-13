@@ -50,7 +50,12 @@ public:
         {
             parent->leftchiId = newNode; //Make the lift child of the parent point to the new node
         }
-       
+        else if (element > parent->info) //If the value in the data field of the new node is greater than that
+        {
+            parent->rightchiId = newNode; //Make the right child of the parent point to the new node 
+        }
+    }
+
 };
 
 int main()
