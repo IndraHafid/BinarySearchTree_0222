@@ -56,6 +56,22 @@ public:
         }
     }
 
+    void search(string element, Node*& parent, Node*& currentNode)
+    {
+        //This function searches the currentNode of the specified Node as well as the currentNode of its parent
+        currentNode = ROOT;
+        parent = NULL;
+        while ((currentNode != NULL) && (currentNode->info != element))
+        {
+            parent = currentNode;
+            if (element < currentNode->info)
+                currentNode = currentNode->leftchiId;
+            else
+                currentNode = currentNode->rightchiId;
+        }
+    }
+
+   
 };
 
 int main()
